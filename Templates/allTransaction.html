@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllTransaction</title>
+</head>
+<body>
+    <h3>
+        ALL TRANSACTIONS
+    </h3>
+    <table class="table" align="centre" border="1">
+        <thead>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Source</th>
+            <th>Amount</th>
+            <th>Remark</th>
+        </thead>
+        {% for x in inc %}
+        <tbody>
+            <tr>
+                <td>{{x.Date}}</td>
+                <td>{{x.Time}}</td>
+                <td>{{x.Source}}</td>
+                <td>{{x.Amount}}</td>
+                <td>{{x.Remark}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+    <br>
+    <table class="table" align="centre" border="1">
+        <thead>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Amount</th>
+            <th>Expense</th>
+            <th>Remark</th>
+        </thead>
+        {% for x in exp %}
+        <tbody>
+            <tr>
+                <td>{{x.Date}}</td>
+                <td>{{x.Time}}</td>
+                <td>{{x.Amount}}</td>
+                <td>{{x.Expenses}}</td>
+                <td>{{x.Remark}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</body>
+</html>

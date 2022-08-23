@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Income</title>
+    <style>
+        #id1
+        {
+            background-color: paleturquoise;
+            font-style:italic;
+            font-size: 16px;
+            padding: 4px 4px;
+            text-align: center;
+            border: 2px solid black;
+            margin-bottom: 2%;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header" style="font-size: 50px; color:green;">
+                    Save Expenses Details here
+                </div>
+                <div class="card-body">
+                    <form action="SaveExpense" method="get">
+                        <div class="form-group" id="id1">
+                            <input type="text" class="form control" placeholder="Date" name="date">
+                        </div>
+                        <div class="form-group" id="id1">
+                            <input type="text" class="form control" placeholder="Time" name="time">
+                        </div>
+                        <div class="form-group" id="id1">
+                            <input type="number" class="form control" placeholder="Amount" name="amount">
+                        </div>
+                        <div class="form-group" id="id1">
+                            <select placeholder="Expenses" name="expenses">
+                                <option>Grocery</option>
+                                <option>Food</option>
+                                <option>Social Life</option>
+                                <option>Paying Bills</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="id1">
+                            <input type="text" class="form control" placeholder="Remark" name="remark">
+                        </div>
+                        <button class="btn btn-success">Save Expenses</button>
+                    </form>
+                </div>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

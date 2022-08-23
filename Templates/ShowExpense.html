@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowingExpenses</title>
+</head>
+<body>
+    <h1 style="color: rgb(1, 61, 121); text-align: center; text-shadow: 1px;">This is your Following Expense</h1>
+    <table border="1" style="background-color: rgb(252, 116, 166);
+    font-style:normal;
+    font-size: 25px;
+    padding: 8px 8px;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 10%;" align="center">
+    {%for x in record%}
+    <tbody>
+        <tr>
+            <td><div>{{x.id}}</div></td>
+            <td><div>{{x.Date}}</div></td>
+            <td><div>{{x.Time}}</div></td>
+            <td><div>{{x.Amount}}</div></td>
+            <td><div>{{x.Expense}}</div></td>
+            <td><div>{{x.Remark}}</div></td>
+        </tr>
+    </tbody>
+    {%endfor%}
+    </table>
+</body>
+</html>
