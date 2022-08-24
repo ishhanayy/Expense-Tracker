@@ -1,3 +1,5 @@
+->Made this hand on project in one moth industrial trainee
+
 ->Expense Tracker Application is helpful for keeping track of all the transactions.
 
 ->For a busy person it keeps the record of all theie money inflow and outflow.
